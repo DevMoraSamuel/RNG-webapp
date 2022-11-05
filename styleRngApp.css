@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+    font-family: "Roboto", "Avenir Next", "Avenir", "Arial", sans-serif;
+    color: whitesmoke;
+}
+
+.bg-color-base {
+    background-color: #353131;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-vertical-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bourder {
+    border: 1px solid #f7d3d3;
+    /* padding: 2px; */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #72938c;
+    color: white;
+    font-size: 30px;
+}
+
+.dark {
+    background: #3f3442;
+    color: #fff;
+}
+
+.dropdown {
+    background: #3f3442;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 22px;
+}
+
+.space-padding {
+    padding: 5px;
+}
+
+.width-auto {
+    width: auto;
+}
+
+#rollDicebutton {
+    margin-top: 5px;
+}
+
+.dice-square {
+    width: 25px;
+    height: 25px;
+}
+
+.dice-result {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    background-color: #62529c;
+}

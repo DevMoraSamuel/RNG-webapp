@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Script -->
+    <script src="./diceRoller.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styleRngApp.css">
+    <link rel="icon" href="./icons/icons8-dice-vitaliy-gorbachev-flat-16.png">
+    <title>RNG dice roller app</title>
+</head>
+<header class="bg-color-base header">
+    <div class="form-row">
+        <h1>RNG Dice Roller App</h1>
+    </div>
+
+</header>
+
+<body class="bg-color-base">
+    <div class="form-vertical-row dice-roller-container text-center ">
+        <form action="">
+            <div class="form-row text-center">
+                <p>Select a dice type and the amount of dices to roll</p>
+            </div>
+            <div id="diceCountDiv" class="form-row text-center space-padding">
+                <input type="number" id="quantity" value="1" name="quantity-of-dice" min="1" max="10" class="dice-counter dark">
+            </div>
+            <div name="diceCategory" id="dice-dropdown-div" class="form-row text-center space-padding">
+                <select id="diceDropdown" class="dropdown">
+                    <option value="0">Choose</option>
+                    <option value="20">d20</option>
+                    <option value="4">d4</option>
+                    <option value="6">d6</option>
+                    <option value="8">d8</option>
+                    <option value="10">d10</option>
+                    <option value="12">d12</option>
+            </select>
+            </div>
+            <div id="buttonContainer form-row">
+                <input type="button" id="rollDicebutton" class="dark" value="result" onclick="diceRolling()" />
+            </div>
+        </form>
+        <div id="diceResultDiv" class="form-vertical-row text-center space-padding">
+            results:
+
+            <div id="diceResult" class="width-auto dice-result text-center">
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
